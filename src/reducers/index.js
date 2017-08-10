@@ -6,7 +6,8 @@ import update from 'immutability-helper';
 const initialState = {
     users: userList(),
     selectedUser: null,
-    selectedAccount: null
+    selectedAccount: null,
+    withdrawFunds: null
 };
 
 const reducer = function(state = initialState, action) {

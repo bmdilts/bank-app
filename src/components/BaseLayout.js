@@ -25,5 +25,4 @@ export default class BaseLayout extends React.Component {
       </div>
     );
   }
-
 }

@@ -48,11 +48,13 @@ class UserDetail extends Component {
   }
 }
 function mapStateToProps(state) {
+  const user = state.users.find(user => user._id === state.selectedUser);
   return {
-    user: state.selectedUser,
-    account: state.selectedAccount
+    user,
+    account: user.accounts.find(account => account.id === state.selectedAccount)
   };
 }
+
 /*
 
 You will need to create a mapDispatchToProps function here and
@@ -62,6 +64,7 @@ component.
 */
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
+        selectUser: selectUser,
         selectAccount: selectAccount
     }, dispatch)
 }
