@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+.background1{
+  height: 20vh;
+  background-image: url('/private-banker.png');
+  background-size: cover;
+  background-position: top;
+}
+.background2{
+  height: 20vh;
+  background-color: rgba(17,52,117,.75);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.background2 img{
+  align-self: center;
+  border-radius: 2px;
+}
+.link{
+  margin-bottom: 2vh;
+  padding: 1%;
+  background-color: white;
+  border-radius: 3px;
+}
+footer{
+
+}
